@@ -7,7 +7,7 @@ export class RatsController extends BaseController {
         super('api/rats')
         this.router
             .get('', this.getAllRats)
-            .get('/:ratId/missions', this.getAllRats)
+            .get('/:ratId/missions', this.getMissionByRatId)
     }
 
     /**
